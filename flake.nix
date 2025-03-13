@@ -29,7 +29,6 @@
             openssl
             libxml2
             lzop
-            pngcrush
             schedtool
             squashfsTools
             libxslt
@@ -40,6 +39,7 @@
             pkg-config
           ];
 
+        # setting up source, fixed commit hash to 22.1 Branch
           shellHook = ''
             echo "Setting up source"
             mkdir Source/
