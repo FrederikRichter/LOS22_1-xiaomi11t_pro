@@ -14,41 +14,37 @@
       {
         devShells.default = pkgs.mkShell {
           buildInputs = with pkgs; [
-            bc
             bison
             git-repo
             ccache
-            curl
-            flex
             gcc
             git
             git-lfs
             gnupg
             gperf
-            imagemagick
             readline
             libz
             libelf
             lz4
-            #libsdl2
             openssl
             libxml2
             lzop
             pngcrush
-            rsync
             schedtool
             squashfsTools
             libxslt
             zip
             zlib
-            ncurses
             python3
             gnumake
             pkg-config
           ];
 
           shellHook = ''
-            echo "Welcome to the Android-like build environment!"
+            echo "Setting up source"
+            mkdir Source/
+            cd Source && repo init --partial-clone --depth=1 -u https://github.com/LineageOS/android.git -b 538c2539f5863a792f5909a05bbfddb43419449c --git-lfs
+            repo sync -c -j8 --jobs-network=8 --jobs-checkout=12
           '';
         };
       }
