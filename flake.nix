@@ -57,7 +57,7 @@
                         echo "Setting up source"
                         mkdir -p Source/
                         cd Source && repo init --partial-clone --depth=1 -u https://github.com/LineageOS/android.git -b 538c2539f5863a792f5909a05bbfddb43419449c --git-lfs
-                        repo sync --jobs-network=${JOBS_NETWORK} --jobs-checkout=${JOBS_CHECKOUT}
+                        repo sync --jobs-network=${JOBS_NETWORK} --jobs-checkout=${JOBS_CHECKOUT} --force-checkout
                         '';
 
                     env = {
