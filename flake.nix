@@ -41,11 +41,17 @@
 
         # setting up source, fixed commit hash to 22.1 Branch
           shellHook = ''
+            echo "Enabling CCACHE with 50G Disk Space"
+            ccache -M 50G
             echo "Setting up source"
             mkdir Source/
             cd Source && repo init --partial-clone --depth=1 -u https://github.com/LineageOS/android.git -b 538c2539f5863a792f5909a05bbfddb43419449c --git-lfs
             repo sync -c -j8 --jobs-network=8 --jobs-checkout=12
           '';
+          env = {
+                USE_CCACHE=1;
+                CCACHE_EXEC="${pkgs.ccache}/bin/ccache";
+              };
         };
       }
     );
