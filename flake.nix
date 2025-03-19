@@ -37,15 +37,15 @@
                     echo "Cloning necessary repositories for Xiaomi 11T Pro (vili)..."
 
                     clone_repo() {
-                        if [ ! -d "$2" ]; then
-                            echo "Cloning $1 into $2..."
-                            git clone --depth=1 "$1" -b lineage-22.1 "$2"
-                        else
-                            echo "Skipping $2 (already exists)"
+                        if [ -d "$2" ]; then
+                            echo "Removing existing $2..."
+                            rm -rf "$2"
                         fi
+                        echo "Cloning $1 into $2..."
+                        git clone --depth=1 "$1" -b lineage-22.1 "$2"
                     }
 
-                    clone_repo "https://github.com/AOSP-for-vili/device_xiaomi_sm8350-common.git" "device/xiaomi/sm8350-common"
+                    clone_repo "https://github.com/FrederikRichter/device_xiaomi_sm8350-common.git" "device/xiaomi/sm8350-common"
                     clone_repo "https://github.com/AOSP-for-vili/android_kernel_xiaomi_sm8350.git" "kernel/xiaomi/sm8350"
                     clone_repo "https://github.com/AOSP-for-vili/android_hardware_xiaomi.git" "hardware/xiaomi"
                     clone_repo "https://github.com/AOSP-for-vili/vendor_xiaomi_vili.git" "vendor/xiaomi/vili"
@@ -105,6 +105,10 @@
                     profile = ''
                         # Setting Release Target
                         export TARGET_RELEASE=ap4a
+
+                        # New Commands Message
+                        echo "New Commands: start_build, setup_source (WARNING: REMOVES GIT REPOS IF ALREADY EXIST, KEEPS LARGE .repo)"
+
                     '';
                 };
 
@@ -114,6 +118,7 @@
                     buildInputs = [ fhsEnv ];
                     shellHook = ''
                         echo "Entering FHS environment..."
+                        
                         exec ${fhsEnv}/bin/LOS22_1-env  # Corrected entry point
                     '';
                 };
