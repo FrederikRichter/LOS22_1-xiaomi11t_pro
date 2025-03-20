@@ -20,6 +20,11 @@
                     name = "setup_source";
                     text = ''
                 # !${pkgs.bashInteractive}/bin/bash
+
+                    # ignore ssh config
+                    export GIT_SSH_COMMAND="ssh -F /dev/null"
+                    export GIT_SSH=ssh
+
                     echo "Setting up source directory..."
                     mkdir -p Source
                     cd Source
@@ -108,9 +113,6 @@
                         export TARGET_RELEASE=ap4a
                         
 
-                        # ignore ssh config
-                        export GIT_SSH_COMMAND="ssh -F /dev/null"
-                        export GIT_SSH=ssh
 
                         # New Commands Message
                         echo "New Commands: start_build, setup_source (WARNING: REMOVES GIT REPOS IF ALREADY EXIST, KEEPS LARGE .repo)"
