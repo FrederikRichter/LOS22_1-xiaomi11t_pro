@@ -24,9 +24,6 @@
                     mkdir -p Source
                     cd Source
                 
-                    # ignore any ssh configs for git
-                    export GIT_SSH_COMMAND="ssh -F /dev/null"
-
 
                     if [ ! -d .repo ]; then
                         echo "Initializing repo..."
@@ -109,6 +106,11 @@
                     profile = ''
                         # Setting Release Target
                         export TARGET_RELEASE=ap4a
+                        
+
+                        # ignore ssh config
+                        export GIT_SSH_COMMAND="ssh -F /dev/null"
+                        export GIT_SSH=ssh
 
                         # New Commands Message
                         echo "New Commands: start_build, setup_source (WARNING: REMOVES GIT REPOS IF ALREADY EXIST, KEEPS LARGE .repo)"
