@@ -60,7 +60,7 @@
                     PATCH_FILE="0001-Add-backwards-compatible-CaptureResultExtras-constructor.patch"
                     if [ ! -f "$PATCH_FILE" ]; then
                         wget https://raw.githubusercontent.com/xiaomi-haydn-devs/Patch-Haydn/14/Leicamera/$PATCH_FILE
-                        patch -p1 < $PATCH_FILE --skip
+                        patch -p1 < $PATCH_FILE
                     else
                         echo "Patch already applied, skipping..."
                     fi
@@ -97,7 +97,7 @@
                         readline libz libelf lz4 openssl m4 ncurses5 libxml2 lzop
                         schedtool squashfsTools libxslt zip unzip libxcrypt-legacy
                         zlib python3 gnumake pkg-config bc libgcc
-                        bash-completion
+                        bash-completion gnupatch
                         psmisc flex fontconfig nettools imagemagick android-tools
                         libelf procps freetype pngcrush rsync ncurses
                     ]) ++ [ sourceScript buildScript ];
