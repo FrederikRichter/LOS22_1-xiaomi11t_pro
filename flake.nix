@@ -23,6 +23,10 @@
                     echo "Setting up source directory..."
                     mkdir -p Source
                     cd Source
+                
+                    # ignore any ssh configs for git
+                    export GIT_SSH_COMMAND="ssh -F /dev/null"
+
 
                     if [ ! -d .repo ]; then
                         echo "Initializing repo..."
@@ -118,8 +122,6 @@
                 devShells.default = pkgs.mkShell {
                     buildInputs = [ fhsEnv ];
                     shellHook = ''
-                        # ignore any ssh configs for git
-                        export GIT_SSH_COMMAND="ssh -F /dev/null"
 
 
                         echo "Entering FHS environment..."
