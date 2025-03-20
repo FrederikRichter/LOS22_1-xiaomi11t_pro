@@ -13,7 +13,7 @@
                 lib = nixpkgs.lib;
 
                 JOBS_NETWORK = "4";
-                JOBS_CHECKOUT = "4";
+                JOBS_CHECKOUT = "$(nproc --all)";
 
                 # Define the Git Clone Script
                 sourceScript = pkgs.writeTextFile {
@@ -24,7 +24,6 @@
                     mkdir -p Source
                     cd Source
                 
-
                     if [ ! -d .repo ]; then
                         echo "Initializing repo..."
                         repo init --partial-clone --depth=1 -u https://github.com/LineageOS/android.git -b 538c2539f5863a792f5909a05bbfddb43419449c --git-lfs
@@ -104,7 +103,7 @@
                         readline libz libelf lz4 openssl m4 ncurses5 libxml2 lzop
                         schedtool squashfsTools libxslt zip unzip libxcrypt-legacy
                         zlib python3 gnumake pkg-config bc libgcc
-                        bash-completion gnupatch
+                        bash-completion gnupatch coreutils
                         psmisc flex fontconfig nettools imagemagick android-tools
                         libelf procps freetype pngcrush rsync ncurses
                     ]) ++ [ sourceScript buildScript ];
