@@ -109,8 +109,6 @@
                         # New Commands Message
                         echo "New Commands: start_build, setup_source (WARNING: REMOVES GIT REPOS IF ALREADY EXIST, KEEPS LARGE .repo)"
                         
-                        # ignore any ssh configs for git
-                        export GIT_SSH_COMMAND="ssh -F /dev/null"
 
                     '';
                 };
@@ -120,8 +118,11 @@
                 devShells.default = pkgs.mkShell {
                     buildInputs = [ fhsEnv ];
                     shellHook = ''
+                        # ignore any ssh configs for git
+                        export GIT_SSH_COMMAND="ssh -F /dev/null"
+
+
                         echo "Entering FHS environment..."
-                        
                         exec ${fhsEnv}/bin/LOS22_1-env  # Corrected entry point
                     '';
                 };
