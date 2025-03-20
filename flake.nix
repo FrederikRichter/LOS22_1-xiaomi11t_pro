@@ -42,8 +42,15 @@
                             echo "Removing existing $2..."
                             rm -rf "$2"
                         fi
-                        echo "Cloning $1 into $2..."
-                        git clone --depth=1 "$1" -b lineage-22.1 "$2"
+
+                        echo "Checking if branch lineage-22.1 exists for $1..."
+                        if git ls-remote --exit-code --heads "$1" lineage-22.1 >/dev/null 2>&1; then
+                            echo "Branch lineage-22.1 exists. Cloning from it..."
+                            git clone --depth=1 "$1" -b lineage-22.1 "$2"
+                        else
+                            echo "Branch lineage-22.1 does not exist. Cloning from default branch..."
+                            git clone --depth=1 "$1" "$2"
+                        fi
                     }
 
                     clone_repo "https://github.com/FrederikRichter/device_xiaomi_sm8350-common.git" "device/xiaomi/sm8350-common"
