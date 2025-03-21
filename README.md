@@ -9,6 +9,10 @@ This is a nix flake that aims to provide an easy to use and reproducible environ
 ### Quirks
 OMX and Libstagefrighthw deactivated, dolby might not work, Youtube and Spotify playback over bt not working
 
+When setting up the sources some clones fail because google rate limits. If that happens just enter Source after the script finished and run
+```bash
+repo sync
+```
 ### Usage
 ```bash
 nix develop github:FrederikRichter/LOS22_1-xiaomi11t_pro
