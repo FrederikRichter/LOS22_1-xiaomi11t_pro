@@ -7,7 +7,7 @@ Nix Shell to build lineage os 22.1 and more for Xiaomi 11t Pro
 This is a nix flake that aims to provide an easy to use and reproducible environment that sets up all sources that are needed to build lineageos 22.1 for the Xiaomi 11t pro (vili). All build dependencies should be included.
 
 ### Quirks
-OMX and Libstagefrighthw deactivated, dolby might not work
+OMX and Libstagefrighthw deactivated, dolby might not work, Youtube and Spotify playback over bt not working
 
 ### Usage
 ```bash
