@@ -15,12 +15,11 @@ this includes:
 - 120Hz
 - 120W hypercharge
 - high polling rate
-- dolby atmos
 - miui camera
 - Fingerprint reader
 
 ### Quirks
-None at this time
+Dolby not correctly implemented
 
 When setting up the sources some clones fail because google rate limits. If that happens just enter Source after the script finished and run
 ```bash
