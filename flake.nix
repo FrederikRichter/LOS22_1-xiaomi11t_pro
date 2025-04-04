@@ -18,11 +18,11 @@
       flake = false;
     };
     vendor-vili = {
-      url = "github:AOSP-for-vili/vendor_xiaomi_vili/lineage-22.1-wip?shallow=1";
+      url = "github:AOSP-for-vili/vendor_xiaomi_vili/lineage-22.1?shallow=1";
       flake = false;
     };
     vendor-sm8350-common = {
-      url = "github:AOSP-for-vili/vendor_xiaomi_sm8350-common/lineage-22.1?shallow=1";
+      url = "github:AOSP-for-vili/vendor_xiaomi_sm8350-common/lineage-22.1-wip?shallow=1";
       flake = false;
     };
     vendor-vili-firmware = {
