@@ -29,7 +29,7 @@ repo sync
 ### Usage
 #### Building
 ```bash
-nix develop github:FrederikRichter/LineageOS_22-Xiaomi11TPro_vili/22.2
+nix develop github:FrederikRichter/LineageOS_22-Xiaomi11TPro_vili/22.1
 setup_source
 start_build
 ```
