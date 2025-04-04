@@ -3,16 +3,16 @@
     "device-sm8350-common": {
       "flake": false,
       "locked": {
-        "lastModified": 1743391655,
-        "narHash": "sha256-PFPlNKqAS1J4uRI7sMXkJ3qUr9ewnKSRu27XmndTd20=",
+        "lastModified": 1742157064,
+        "narHash": "sha256-wmr4/Al6beWU3ysuCrHvVax694PMe4FF9zVeH7d/ry4=",
         "owner": "AOSP-for-vili",
         "repo": "device_xiaomi_sm8350-common",
-        "rev": "008ad58fbcfdd5d7dca4d84106a654d3c7e71c3f",
+        "rev": "565af8721e9a0f29fe0705538001e1e098e404d6",
         "type": "github"
       },
       "original": {
         "owner": "AOSP-for-vili",
-        "ref": "lineage-22.2-wip",
+        "ref": "lineage-22.1",
         "repo": "device_xiaomi_sm8350-common",
         "type": "github"
       }
@@ -20,16 +20,16 @@
     "device-vili": {
       "flake": false,
       "locked": {
-        "lastModified": 1743436692,
-        "narHash": "sha256-rqvawt22zXeeaX+Ys0UCG7LWPqCzXFRxZqIXJOgbdoA=",
+        "lastModified": 1742795397,
+        "narHash": "sha256-ZPui8pLLzz7KXg3cGCZKLrhW7H6zVtU4xozDsJnNfeU=",
         "owner": "FrederikRichter",
         "repo": "device_xiaomi_vili",
-        "rev": "9ecaddb990f7cf9e6679dfc630525d10ae8e2af0",
+        "rev": "bc7f26f6686152e02f63fb9d22a315bfab2a268d",
         "type": "github"
       },
       "original": {
         "owner": "FrederikRichter",
-        "ref": "lineage-22.2-wip",
+        "ref": "lineage-22.1",
         "repo": "device_xiaomi_vili",
         "type": "github"
       }
@@ -55,16 +55,16 @@
     "hardware-xiaomi": {
       "flake": false,
       "locked": {
-        "lastModified": 1743244615,
-        "narHash": "sha256-5z+7UO61FXWiCMB52//KOO9QDqnd41fmRfEvRwDi1EU=",
+        "lastModified": 1743243773,
+        "narHash": "sha256-KfxGg7vahGcjcmiXQSXwscuz3ltFZGLbLgtwX9wpoQ0=",
         "owner": "AOSP-for-vili",
         "repo": "android_hardware_xiaomi",
-        "rev": "49ad663ffb7b9dd20b97863ad024f67f0e18d879",
+        "rev": "96a2c308d7f90b98f06324dc4249514a83052b7f",
         "type": "github"
       },
       "original": {
         "owner": "AOSP-for-vili",
-        "ref": "lineage-22.2",
+        "ref": "lineage-22.1",
         "repo": "android_hardware_xiaomi",
         "type": "github"
       }
@@ -133,16 +133,16 @@
     "vendor-sm8350-common": {
       "flake": false,
       "locked": {
-        "lastModified": 1743391613,
-        "narHash": "sha256-iwMBce7IK3/ZKpyxsS8p4deijTvMtN9XUIV7D+ccjoI=",
+        "lastModified": 1743485017,
+        "narHash": "sha256-FzpbrEqQSilSizbzZkHHguQX/y9KYUO5Iafm+in1fqs=",
         "owner": "AOSP-for-vili",
         "repo": "vendor_xiaomi_sm8350-common",
-        "rev": "7c08dff9bdc48b61b9ccc81a8cfd88ca6a982f61",
+        "rev": "84ced8b72a8d0d5fbbec337b1672dfb71bd1d1cb",
         "type": "github"
       },
       "original": {
         "owner": "AOSP-for-vili",
-        "ref": "lineage-22.2-wip",
+        "ref": "lineage-22.1-wip",
         "repo": "vendor_xiaomi_sm8350-common",
         "type": "github"
       }
@@ -150,16 +150,16 @@
     "vendor-vili": {
       "flake": false,
       "locked": {
-        "lastModified": 1743241640,
-        "narHash": "sha256-1qtDrS3G0KVlPo+7KqQy4MonkjCkt2pqr2U+duTQSkY=",
+        "lastModified": 1742791504,
+        "narHash": "sha256-7YkCZXEfXDk/iH+iS0ELepG1a2OsrLPRIhHquQi3Juc=",
         "owner": "AOSP-for-vili",
         "repo": "vendor_xiaomi_vili",
-        "rev": "a99243b4e2dd96a0dca1fd09cc6b2d8db8b39b9d",
+        "rev": "dc14226f6fb6f6b6dc2b571e960447b4e343b715",
         "type": "github"
       },
       "original": {
         "owner": "AOSP-for-vili",
-        "ref": "lineage-22.2-wip",
+        "ref": "lineage-22.1",
         "repo": "vendor_xiaomi_vili",
         "type": "github"
       }
