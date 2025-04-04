@@ -134,7 +134,7 @@
         };
 
         fhsEnv = pkgs.buildFHSEnv {
-          name = "LOS22_1-env";
+          name = "LOS22_2-env";
           targetPkgs = pkgs: (with pkgs; [
             bison git-repo ccache gcc git bashInteractive git-lfs gnupg gperf wget
             readline libz libelf lz4 openssl m4 ncurses5 libxml2 lzop
@@ -164,7 +164,7 @@
           buildInputs = [ fhsEnv ];
           shellHook = ''
             echo "Entering FHS environment..."
-            exec ${fhsEnv}/bin/LOS22_1-env
+            exec ${fhsEnv}/bin/LOS22_2-env
           '';
         };
 
