@@ -1,6 +1,6 @@
 WIP!
 
-Nix Shell to build vanilla lineage os 22.2 for Xiaomi 11t Pro
+Nix Shell to build vanilla lineage os 22.1 for Xiaomi 11t Pro
 
 # About
 

@@ -6,7 +6,7 @@
     
     # Device-specific repositories with shallow cloning, change if desired
     device-sm8350-common = {
-      url = "github:AOSP-for-vili/device_xiaomi_sm8350-common/lineage-22.2-wip?shallow=1";
+      url = "github:AOSP-for-vili/device_xiaomi_sm8350-common/lineage-22.1-wip?shallow=1";
       flake = false;
     };
     kernel-sm8350 = {
@@ -14,15 +14,15 @@
       flake = false;
     };
     hardware-xiaomi = {
-      url = "github:AOSP-for-vili/android_hardware_xiaomi/lineage-22.2?shallow=1";
+      url = "github:AOSP-for-vili/android_hardware_xiaomi/lineage-22.1?shallow=1";
       flake = false;
     };
     vendor-vili = {
-      url = "github:AOSP-for-vili/vendor_xiaomi_vili/lineage-22.2-wip?shallow=1";
+      url = "github:AOSP-for-vili/vendor_xiaomi_vili/lineage-22.1-wip?shallow=1";
       flake = false;
     };
     vendor-sm8350-common = {
-      url = "github:AOSP-for-vili/vendor_xiaomi_sm8350-common/lineage-22.2-wip?shallow=1";
+      url = "github:AOSP-for-vili/vendor_xiaomi_sm8350-common/lineage-22.1-wip?shallow=1";
       flake = false;
     };
     vendor-vili-firmware = {
@@ -30,7 +30,7 @@
       flake = false;
     };
     device-vili = {
-      url = "github:FrederikRichter/device_xiaomi_vili/lineage-22.2-wip?shallow=1";
+      url = "github:FrederikRichter/device_xiaomi_vili/lineage-22.1-wip?shallow=1";
       flake = false;
     };
   };
@@ -49,7 +49,7 @@
         JOBS_CHECKOUT = "$(nproc --all)";
 
         # LINEAGE-ANROID-REV = "538c2539f5863a792f5909a05bbfddb43419449c";
-        LINEAGE-ANROID-REV = "lineage-22.2";
+        LINEAGE-ANROID-REV = "lineage-22.1";
 
         sourceScript = pkgs.writeTextFile {
           name = "setup_source";
