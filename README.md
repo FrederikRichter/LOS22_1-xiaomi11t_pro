@@ -4,7 +4,7 @@ Nix Shell to build vanilla lineage os 22.1 for Xiaomi 11t Pro
 
 # About
 
-This is a nix flake that aims to provide an easy to use and reproducible environment that sets up all sources that are needed to build lineageos 22.2 for the Xiaomi 11t pro (vili). All build dependencies should be included.
+This is a nix flake that aims to provide an easy to use and reproducible environment that sets up all sources that are needed to build lineageos 22.1 for the Xiaomi 11t pro (vili). All build dependencies should be included.
 
 ### Working
 Everything tested and confirmed by now
