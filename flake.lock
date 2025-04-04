@@ -20,11 +20,11 @@
     "device-vili": {
       "flake": false,
       "locked": {
-        "lastModified": 1742795397,
-        "narHash": "sha256-ZPui8pLLzz7KXg3cGCZKLrhW7H6zVtU4xozDsJnNfeU=",
+        "lastModified": 1743780866,
+        "narHash": "sha256-5XLjW9d7jhpAUr7K9yV+HmlBvTuBPGncsUiMhp10fpA=",
         "owner": "FrederikRichter",
         "repo": "device_xiaomi_vili",
-        "rev": "bc7f26f6686152e02f63fb9d22a315bfab2a268d",
+        "rev": "1e9413ead8cfc7a79c89af9a0526dd3c9fb44c94",
         "type": "github"
       },
       "original": {
@@ -88,11 +88,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1743315132,
-        "narHash": "sha256-6hl6L/tRnwubHcA4pfUUtk542wn2Om+D4UnDhlDW9BE=",
+        "lastModified": 1743583204,
+        "narHash": "sha256-F7n4+KOIfWrwoQjXrL2wD9RhFYLs2/GGe/MQY1sSdlE=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "52faf482a3889b7619003c0daec593a1912fddc1",
+        "rev": "2c8d3f48d33929642c1c12cd243df4cc7d2ce434",
         "type": "github"
       },
       "original": {
@@ -133,16 +133,16 @@
     "vendor-sm8350-common": {
       "flake": false,
       "locked": {
-        "lastModified": 1743485017,
-        "narHash": "sha256-FzpbrEqQSilSizbzZkHHguQX/y9KYUO5Iafm+in1fqs=",
+        "lastModified": 1741419423,
+        "narHash": "sha256-mbg+xZMi0o5WA7gys5CWOrCImsQaT/lJqjRu49aD1Sg=",
         "owner": "AOSP-for-vili",
         "repo": "vendor_xiaomi_sm8350-common",
-        "rev": "84ced8b72a8d0d5fbbec337b1672dfb71bd1d1cb",
+        "rev": "32e666dbca1d5480ec6f3a162dde01006aebc66c",
         "type": "github"
       },
       "original": {
         "owner": "AOSP-for-vili",
-        "ref": "lineage-22.1-wip",
+        "ref": "lineage-22.1",
         "repo": "vendor_xiaomi_sm8350-common",
         "type": "github"
       }
