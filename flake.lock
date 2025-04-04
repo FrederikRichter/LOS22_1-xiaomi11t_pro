@@ -3,15 +3,15 @@
     "device-sm8350-common": {
       "flake": false,
       "locked": {
-        "lastModified": 1742157064,
-        "narHash": "sha256-wmr4/Al6beWU3ysuCrHvVax694PMe4FF9zVeH7d/ry4=",
-        "owner": "AOSP-for-vili",
+        "lastModified": 1742916197,
+        "narHash": "sha256-XkmUdqcKOcDSe2ZvbHwFF8usZ9ymEeWT2m0n7qfDBSo=",
+        "owner": "FrederikRichter",
         "repo": "device_xiaomi_sm8350-common",
-        "rev": "565af8721e9a0f29fe0705538001e1e098e404d6",
+        "rev": "0de8bd79bf751668818c7bfdd59900e78a845fe1",
         "type": "github"
       },
       "original": {
-        "owner": "AOSP-for-vili",
+        "owner": "FrederikRichter",
         "ref": "lineage-22.1",
         "repo": "device_xiaomi_sm8350-common",
         "type": "github"
