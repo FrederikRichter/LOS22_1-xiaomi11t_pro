@@ -30,7 +30,7 @@
       flake = false;
     };
     device-vili = {
-      url = "github:FrederikRichter/device_xiaomi_vili/lineage-22.1-wip?shallow=1";
+      url = "github:FrederikRichter/device_xiaomi_vili/lineage-22.1?shallow=1";
       flake = false;
     };
   };
