@@ -6,7 +6,7 @@
     
     # Device-specific repositories with shallow cloning, change if desired
     device-sm8350-common = {
-      url = "github:FrederikRichter/device_xiaomi_sm8350-common/lineage-22.1?shallow=1";
+      url = "github:AOSP-for-vili/device_xiaomi_sm8350-common/lineage-22.1?shallow=1";
       flake = false;
     };
     kernel-sm8350 = {
