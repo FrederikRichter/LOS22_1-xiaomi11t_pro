@@ -6,7 +6,6 @@
     
     # Device-specific repositories with shallow cloning, change if desired
     device-sm8350-common = {
-
       url = "github:AOSP-for-vili/device_xiaomi_sm8350-common/lineage-22.2?shallow=1";
       flake = false;
     };
